@@ -1,5 +1,5 @@
 var _domain_name;
-var _attr_key;
+const _attr_key;
 var _IMIchat_IsValidNavigation;
 var _IMIchat_callback_dic = {};
 
@@ -13,7 +13,7 @@ var IMIChatInit = function () {
     } catch (e) { }
        //var domainUrl = "http://widget.imichat.co";
     var domainUrl = "https://media.imi.chat";
-    var _skey = "70003df6-33d8-11ea-afcd-0610d74d64fc";
+    const _skey = "70003df6-33d8-11ea-afcd-0610d74d64fc";
     return {
         domainName: function () {
             return "https://media.imi.chat/widget";
