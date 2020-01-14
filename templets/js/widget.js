@@ -5,9 +5,10 @@ var _IMIchat_callback_dic = {};
 
     // localStorage.clear();
     function getItems(){
+    localStorage.setItem('value1', 'true');
     localStorage.setItem("service_key","70003df6-33d8-11ea-afcd-0610d74d64fc")
-    let a= localStorage.getItem("test","in here")
-    console.log(a)
+    var val1 = localStorage.getItem('value1');
+    console.log(val1)
     }
     getItems()
 
