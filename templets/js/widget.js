@@ -25,7 +25,7 @@ var IMIChatInit = function () {
     const _skey = "70003df6-33d8-11ea-afcd-0610d74d64fc";
     return {
         domainName: function () {
-            return "/widge1t.js";
+            return "./widget.js";
         },
         init: function () {
             try {
