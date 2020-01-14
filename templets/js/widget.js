@@ -3,7 +3,7 @@ var _attr_key ;
 var _IMIchat_IsValidNavigation;
 var _IMIchat_callback_dic = {};
 
-    // localStorage.clear();
+    // localStorage.;
     function getItems(){
     localStorage.setItem('value1', 'true');
     localStorage.setItem("service_keyjjjj","70003df6-33d8-11ea-afcd-0610d74d64fc")
@@ -21,7 +21,7 @@ var IMIChatInit = function () {
         fingerprint = localStorage.getItem("fingerprint");
     } catch (e) { }
        //var domainUrl = "http://widget.imichat.co";
-    var domainUrl = "https://media.imi.chat";
+    var domainUrl = "widgetv2.js";
     const _skey = "70003df6-33d8-11ea-afcd-0610d74d64fc";
     return {
         domainName: function () {
