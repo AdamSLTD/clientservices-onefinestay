@@ -4,9 +4,12 @@ var _IMIchat_IsValidNavigation;
 var _IMIchat_callback_dic = {};
 
     // localStorage.clear();
+    function getItems(){
     localStorage.setItem("service_key","70003df6-33d8-11ea-afcd-0610d74d64fc")
     localStorage.setItem("test","in here")
     console.log("hi")
+    }
+    getItems()
 
 var IMIChatInit = function () {
     var buttonType = "type1";
