@@ -6794,7 +6794,7 @@
             console.log("key",this._skey)
             localStorage.setItem("service_key", "70003df6-33d8-11ea-afcd-0610d74d64fc");
             console.log("window",window)
-            src="https://media.imi.chat/widget/js/imichatinit.js"
+            
         });
 
 
@@ -6805,8 +6805,11 @@
             const _skey = "70003df6-33d8-11ea-afcd-0610d74d64fc"
             </script>
     <div id="divicw" data-bind="70003df6-33d8-11ea-afcd-0610d74d64fc" data-org=""></div>
-
-    <!-- <script src="https://media.imi.chat/widget/js/imichatinit.js"></script> -->
+            <script src="https://media.imi.chat/widget/js/imichatinit.js">
+    document.onload = function apiCall (){
+        console.log("made api call now! ")
+    }
+</script>
 
     
     
