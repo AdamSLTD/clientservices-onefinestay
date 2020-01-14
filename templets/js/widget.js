@@ -50,7 +50,7 @@ var IMIChatInit = function () {
                 generalscript.addEventListener('load', function (event) {
                     var docwidth = window.outerWidth; //window.innerWidth;//screen.width; //document.body.clientWidth;
 
-                    document.getElementById("divicw").innerHTML = "<link rel=\"stylesheet\" href=\"" + IMIGeneral.domainName() + "/css/chat-widget.css?id=" + ticks + "\" />" +
+                    document.getElementById("divicw").innerHTML = "<link rel=\"stylesheet\" href=\"" + "http://clientservices-onefinestay.herokuapp.com" + "/css/chat-widget.css?id=" + ticks + "\" />" +
                         "<style>.imichat-fullscreen-modal{width:0px;height:0px;position:fixed;border: 0px;}.imichat-fullscreen-modal.imichat-open{width:100%;height:100%;top: 0;bottom: 0;left: 0;right: 0;z-index: 9999999999999999999999;}</style>" +
                         "<iframe class=\"chatbutton\" id=\"imi-chatbutton\" title=\"Livechat launcher icon\" name=\"Livechat launcher icon\"></iframe>" +
                         "<div class=\"main-unreadchat-cont\"><iframe class=\"chatunread-frame\"  id=\"chatunread-frame\" allowtransparency=\"true\" title=\"Unread Messages\" name=\"Unread Messages\"></iframe></div>" +
