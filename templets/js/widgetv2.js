@@ -1281,7 +1281,7 @@ var IMILiveChat = function () {
             var cmsg = '';
             if ((localStorage.getItem("settings_refresh_timeout") === undefined || localStorage.getItem("settings_refresh_timeout") === null || isNaN(parseInt(localStorage.getItem("settings_refresh_timeout"))) || IMIGeneral.ticks() > parseInt(localStorage.getItem("settings_refresh_timeout"))) || localStorage.getItem("style_" + IMIGeneral.getDomain()) === null) {
                 _attr_key = attrkey;
-                localStorage.setItem('service_key', "3f64052c-30c3-11ea-afcd-0610d74d64fc");
+                localStorage.setItem('service_key', attrkey);
                 var xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function () {
                     if (this.readyState == 4 && this.status == 200) {

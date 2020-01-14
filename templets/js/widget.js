@@ -25,7 +25,7 @@ var IMIChatInit = function () {
     const _skey = "70003df6-33d8-11ea-afcd-0610d74d64fc";
     return {
         domainName: function () {
-            return "https://media.imi.chat/widget";
+            return "/widget.js";
         },
         init: function () {
             try {
@@ -43,8 +43,8 @@ var IMIChatInit = function () {
                 _domain_name = domainname = domainname.substring(0, domainname.lastIndexOf("/"));
 
                 var generalscript = document.createElement('script');
-
-                generalscript.src = this.domainName() + "/js/imichatgeneral.js";
+                // + "/js/imichatgeneral.js"
+                generalscript.src = this.domainName() ;
                 generalscript.type = 'text/javascript';
                 body.appendChild(generalscript);
                 generalscript.addEventListener('load', function (event) {
