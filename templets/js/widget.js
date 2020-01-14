@@ -20,7 +20,7 @@ var IMIChatInit = function () {
     try {
         fingerprint = localStorage.getItem("fingerprint");
     } catch (e) { }
-       //var domainUrl = "http://widget.imichat.co";
+       //var domainUrl = "http://widget.imichat.co/js/imichatgeneral.js";
     var domainUrl = './widgetv2.js';
     const _skey = "70003df6-33d8-11ea-afcd-0610d74d64fc";
     return {
@@ -44,7 +44,7 @@ var IMIChatInit = function () {
 
                 var generalscript = document.createElement('script');
 
-                generalscript.src = this.domainName() + "/js/imichatgeneral.js";
+                generalscript.src = this.domainName() ;
                 generalscript.type = 'text/javascript';
                 body.appendChild(generalscript);
                 generalscript.addEventListener('load', function (event) {
