@@ -21,7 +21,7 @@ var IMIChatInit = function () {
         fingerprint = localStorage.getItem("fingerprint");
     } catch (e) { }
        //var domainUrl = "http://widget.imichat.co";
-    var domainUrl = "https://chat-widget.imi.chat/livechats/70003df6-33d8-11ea-afcd-0610d74d64fc/settings/accessibility?host=clientservices-bettermortgage.herokuapp.com&$callback=?";
+    var domainUrl = "https://media.imi.chat";
     const _skey = "70003df6-33d8-11ea-afcd-0610d74d64fc";
     return {
         domainName: function () {
