@@ -3,7 +3,7 @@ var _attr_key ;
 var _IMIchat_IsValidNavigation;
 var _IMIchat_callback_dic = {};
 
-    localStorage.clear();
+    // localStorage.clear();
     localStorage.setItem("service_key","70003df6-33d8-11ea-afcd-0610d74d64fc")
     localStorage.setItem("test","in here")
     console.log("hi")
