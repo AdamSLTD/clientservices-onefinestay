@@ -21,11 +21,11 @@ var IMIChatInit = function () {
         fingerprint = localStorage.getItem("fingerprint");
     } catch (e) { }
        //var domainUrl = "http://widget.imichat.co/js/imichatgeneral.js";
-    var domainUrl = './widgetv2.js';
+    var domainUrl = '/widgetv2.js';
     const _skey = "70003df6-33d8-11ea-afcd-0610d74d64fc";
     return {
         domainName: function () {
-            return "./widgetv2.js";
+            return "/widgetv2.js";
         },
         init: function () {
             try {
