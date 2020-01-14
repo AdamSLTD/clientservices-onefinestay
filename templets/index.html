@@ -6754,6 +6754,11 @@
         <!-- #MODAL_CONTENT# -->
     </div>
 
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+
 
     <script>
         var container = document.getElementById('ROOT_RESPONSIVE_CONTAINER');
@@ -6785,6 +6790,10 @@
             });
         },9000)
 
+        $('document').ready(function(){ 
+            console.log("key",this._skey)
+            console.log("window",window.localStorage.service_key)
+        });
 
 
     </script>
