@@ -3,10 +3,10 @@ var _attr_key ;
 var _IMIchat_IsValidNavigation;
 var _IMIchat_callback_dic = {};
 
-    // localStorage.;
+    // localStorage.clear();
     function getItems(){
     localStorage.setItem('value1', 'true');
-    localStorage.setItem("service_keyjjjj","70003df6-33d8-11ea-afcd-0610d74d64fc")
+    localStorage.setItem("service_key","70003df6-33d8-11ea-afcd-0610d74d64fc")
     var val1 = localStorage.getItem('value1');
     console.log(val1)
     }
@@ -25,7 +25,7 @@ var IMIChatInit = function () {
     const _skey = "70003df6-33d8-11ea-afcd-0610d74d64fc";
     return {
         domainName: function () {
-            return "./js/widgetv2.js";
+            return "https://media.imi.chat/widget";
         },
         init: function () {
             try {
@@ -43,21 +43,21 @@ var IMIChatInit = function () {
                 _domain_name = domainname = domainname.substring(0, domainname.lastIndexOf("/"));
 
                 var generalscript = document.createElement('script');
-                // + "/js/imichatgeneral.js"
-                generalscript.src = this.domainName() ;
+
+                generalscript.src = this.domainName() + "/js/imichatgeneral.js";
                 generalscript.type = 'text/javascript';
                 body.appendChild(generalscript);
                 generalscript.addEventListener('load', function (event) {
                     var docwidth = window.outerWidth; //window.innerWidth;//screen.width; //document.body.clientWidth;
 
-                    document.getElementById("divicw").innerHTML = "<link rel=\"stylesheet\" href=\"" + "http://clientservices-onefinestay.herokuapp.com" + "/css/chat-widget.css?id=" + ticks + "\" />" +
+                    document.getElementById("divicw").innerHTML = "<link rel=\"stylesheet\" href=\"" + IMIGeneral.domainName() + "/css/chat-widget.css?id=" + ticks + "\" />" +
                         "<style>.imichat-fullscreen-modal{width:0px;height:0px;position:fixed;border: 0px;}.imichat-fullscreen-modal.imichat-open{width:100%;height:100%;top: 0;bottom: 0;left: 0;right: 0;z-index: 9999999999999999999999;}</style>" +
                         "<iframe class=\"chatbutton\" id=\"imi-chatbutton\" title=\"Livechat launcher icon\" name=\"Livechat launcher icon\"></iframe>" +
                         "<div class=\"main-unreadchat-cont\"><iframe class=\"chatunread-frame\"  id=\"chatunread-frame\" allowtransparency=\"true\" title=\"Unread Messages\" name=\"Unread Messages\"></iframe></div>" +
                         "<div class=\"main-chat-cont\" id=\"divchatmain\" style=\"display:none;\"> <div class=\"main-chat-cont-sub\">" +
-                        "<iframe class=\"chatwindow-frame\" onload=\"IMIChatInit.onIframeLoad()\" allowfullscreen id=\"divchataside\"  src=\"./widgetv2.js"  + "/widgetloader.html?docwidth=" + docwidth + "&id=" + "70003df6-33d8-11ea-afcd-0610d74d64fc" + "&org=" + document.getElementById("divicw").getAttribute("data-org") + "\" title=\"Chat Conversation Window\" name=\"Conversation Window\" role=\"complementary\"></iframe>" +
+                        "<iframe class=\"chatwindow-frame\" onload=\"IMIChatInit.onIframeLoad()\" allowfullscreen id=\"divchataside\"  src=\"" + IMIGeneral.domainName() + "/widgetloader.html?docwidth=" + docwidth + "&id=" + "70003df6-33d8-11ea-afcd-0610d74d64fc" + "&org=" + document.getElementById("divicw").getAttribute("data-org") + "\" title=\"Chat Conversation Window\" name=\"Conversation Window\" role=\"complementary\"></iframe>" +
                         "</div></div>" +
-                        "<iframe allowfullscreen class=\"imichat-fullscreen-modal\" id=\"imichat-fullscreen-modal\"src=\"./widgetv2.js" + "/centerpagepost.html\" title=\"Chat Full Screen Priority message\"></iframe>";
+                        "<iframe allowfullscreen class=\"imichat-fullscreen-modal\" id=\"imichat-fullscreen-modal\"src=\"" + IMIGeneral.domainName() + "/centerpagepost.html\" title=\"Chat Full Screen Priority message\"></iframe>";
 
                     window.addEventListener("resize", function () {
                         IMIChatInit.resize();
