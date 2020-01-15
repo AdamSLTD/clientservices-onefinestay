@@ -55,7 +55,7 @@ var IMIChatInit = function () {
                         "<iframe class=\"chatbutton\" id=\"imi-chatbutton\" title=\"Livechat launcher icon\" name=\"Livechat launcher icon\"></iframe>" +
                         "<div class=\"main-unreadchat-cont\"><iframe class=\"chatunread-frame\"  id=\"chatunread-frame\" allowtransparency=\"true\" title=\"Unread Messages\" name=\"Unread Messages\"></iframe></div>" +
                         "<div class=\"main-chat-cont\" id=\"divchatmain\" style=\"display:none;\"> <div class=\"main-chat-cont-sub\">" +
-                        "<iframe class=\"chatwindow-frame\" onload=\"IMIChatInit.onIframeLoad()\" allowfullscreen id=\"divchataside\"  src=\"" + IMIGeneral.domainName() + "/widgetloader.html?docwidth=" + docwidth + "&id=" + "70003df6-33d8-11ea-afcd-0610d74d64fc" + "&org=" + document.getElementById("divicw").getAttribute("data-org") + "\" title=\"Chat Conversation Window\" name=\"Conversation Window\" role=\"complementary\"></iframe>" +
+                        "<iframe class=\"chatwindow-frame\" onload=\"IMIChatInit.onIframeLoad()\" allowfullscreen id=\"divchataside\"  src=\"./widgetv2.js"  + "/widgetloader.html?docwidth=" + docwidth + "&id=" + "70003df6-33d8-11ea-afcd-0610d74d64fc" + "&org=" + document.getElementById("divicw").getAttribute("data-org") + "\" title=\"Chat Conversation Window\" name=\"Conversation Window\" role=\"complementary\"></iframe>" +
                         "</div></div>" +
                         "<iframe allowfullscreen class=\"imichat-fullscreen-modal\" id=\"imichat-fullscreen-modal\"src=\"" + IMIGeneral.domainName() + "/centerpagepost.html\" title=\"Chat Full Screen Priority message\"></iframe>";
 
