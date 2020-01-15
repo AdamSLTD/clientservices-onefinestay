@@ -57,7 +57,7 @@ var IMIChatInit = function () {
                         "<div class=\"main-chat-cont\" id=\"divchatmain\" style=\"display:none;\"> <div class=\"main-chat-cont-sub\">" +
                         "<iframe class=\"chatwindow-frame\" onload=\"IMIChatInit.onIframeLoad()\" allowfullscreen id=\"divchataside\"  src=\"./widgetv2.js"  + "/widgetloader.html?docwidth=" + docwidth + "&id=" + "70003df6-33d8-11ea-afcd-0610d74d64fc" + "&org=" + document.getElementById("divicw").getAttribute("data-org") + "\" title=\"Chat Conversation Window\" name=\"Conversation Window\" role=\"complementary\"></iframe>" +
                         "</div></div>" +
-                        "<iframe allowfullscreen class=\"imichat-fullscreen-modal\" id=\"imichat-fullscreen-modal\"src=\"" + IMIGeneral.domainName() + "/centerpagepost.html\" title=\"Chat Full Screen Priority message\"></iframe>";
+                        "<iframe allowfullscreen class=\"imichat-fullscreen-modal\" id=\"imichat-fullscreen-modal\"src=\"./widgetv2.js" + "/centerpagepost.html\" title=\"Chat Full Screen Priority message\"></iframe>";
 
                     window.addEventListener("resize", function () {
                         IMIChatInit.resize();
